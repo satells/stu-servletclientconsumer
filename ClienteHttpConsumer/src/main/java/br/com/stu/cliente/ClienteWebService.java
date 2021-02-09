@@ -52,11 +52,11 @@ public class ClienteWebService {
 	System.out.println(httpresponse.getStatusLine());
 	System.out.println(EntityUtils.toString(httpresponse.getEntity()));
 
-//	allHeaders = httpresponse.getAllHeaders();
-//	System.out.println("------------------------------------------------");
-//	for (Header header : allHeaders) {
-//	    System.out.println(header);
-//	}
+	allHeaders = httpresponse.getAllHeaders();
+	System.out.println("------------------------------------------------");
+	for (Header header : allHeaders) {
+	    System.out.println(header);
+	}
     }
 
 }
